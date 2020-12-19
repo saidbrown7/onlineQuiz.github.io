@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz App </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. Waxaa heysataa oo kaliya <span>15 seconds</span> su'aal kasto.</div>
+            <div class="info">2. Hadii aad su'aal dooratid kama noqon kartid.</div>
+            <div class="info">3. Wax ma dooran kartid haduu waqtiga kugu dhoco.</div>
+            <div class="info">4. Quiz-ka maka bixi kartid asoo dhax kuu socdo.</div>
+            <div class="info">5. Dhibcaha su'aalaha aa saxday waa arki doontaa.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <span> whats is html </span>
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                
+                <div class="option">
+                    <span>is a markup language</span>
+                <div class="icon tick"> <i class="fas fa-check"></i></div>
+                </div>
+                
+                <!-- Here I've inserted options from JavaScript -->
+                <div class="option">
+                    <span>is a human language</span>
+                </div>
+                <div class="option">
+                    <span>is a human language</span>
+                </div>
+                <div class="option">
+                    <span>is a human language</span>
+                <div class="icon cross"> <i class="fas fa-times"></i>
+                </div>
+                
+                
+        </section>
+
+        
+        <footer>
+            <div class="total_que">
+                <span><p>2</p>off<p>5</p>questions</span>
+                
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Wuu kuu dhamaaday quiz-ka!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
